@@ -1,6 +1,11 @@
 <template>
-  <div class="home-images">lol</div>
+  <div class="home-images"></div>
 </template>
+
+<script lang="ts" setup>
+const route = useRoute();
+console.log("route name: ", route.name);
+</script>
 
 <style lang="scss">
 body {
@@ -14,5 +19,3 @@ body {
   min-width: 150px;
 }
 </style>
-
-<script lang="js"></script>
