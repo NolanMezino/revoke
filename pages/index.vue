@@ -4,18 +4,58 @@
     To my Alzheimered self:<br />I document what I do, why I do it<br />and how
     I do it so you can<br />remember who you are.
   </p>
-  <ul class="home-images">
-    <div id="business"></div>
-    <div id="3d"></div>
-  </ul>
-  <!-- <div class="home-images"></div> -->
+  <div class="half-page">
+    <div class="title-list">
+      <div class="columns-title">
+        <h1>Business</h1>
+      </div>
+      <div class="columns-title">
+        <h1>3D design</h1>
+      </div>
+      <div class="columns-title">
+        <h1>Photo</h1>
+      </div>
+      <div class="columns-title">
+        <h1>video</h1>
+      </div>
+    </div>
+
+    <div class="home-images">
+      <div class="columns-images">
+        <div class="images"></div>
+      </div>
+
+      <div class="columns-images">
+        <div class="images"></div>
+      </div>
+      <div class="columns-images">
+        <div class="images"></div>
+      </div>
+      <div class="columns-images">
+        <div class="images"></div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #000;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+h1 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 110px;
+  text-transform: uppercase;
+}
+
 .revoke {
   position: relative;
   margin-bottom: -180px;
@@ -38,11 +78,36 @@ body {
 
 .home-images {
   position: relative;
-  left: 840px;
+  display: flex;
+  flex-direction: column;
+  left: 248px;
+}
+
+.columns-images {
+  margin-bottom: 26px;
+}
+
+.images {
   background-color: #fff;
   min-width: 1020px;
   max-width: 1020px;
   min-height: 630px;
   max-height: 630px;
+}
+
+.title-list {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  left: 26px;
+}
+
+.columns-title {
+  flex-direction: column;
+}
+
+.half-page {
+  display: flex;
+  flex-direction: rows;
 }
 </style>
