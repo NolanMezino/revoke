@@ -12,4 +12,10 @@ export default defineNuxtConfig({
     strict: true,
     shim: false,
   },
+
+  /*
+   ** Global CSS
+   ** SEE: https://nuxt.com/docs/api/nuxt-config#css
+   */
+  css: ["~~/assets/scss/global-styles/index.scss"],
 });
