@@ -14,17 +14,19 @@
 #intro {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: flex-start;
+  gap: 600px;
+  margin-bottom: 26px;
 }
 
 .title {
-  font-size: 110px;
+  font-size: 174.004px;
   text-transform: uppercase;
 }
 
 .copy {
-  width: 400px;
+  width: 623px;
   font-size: 40px;
   line-height: 1.1;
 }
